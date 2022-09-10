@@ -17,7 +17,7 @@ spec:
       containers:
         - name: vprodb
           image: vprofile/vprofiledb:V1
-          PreemptionPolicy: Never
+          preemptionPolicy: Never
           args:
             - "--ignore-db-dir=lost+found"
           volumeMounts:
