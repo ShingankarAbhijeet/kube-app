@@ -6,7 +6,7 @@ metadata:
     app: vprodb
 spec:
   selector:
-    matchlabels:
+    matchLabels:
       app: vprodb
   replicas: 1
   template:
@@ -20,7 +20,7 @@ spec:
           args:
             - "ignore-db-dir=lost+found"
           volumeMounts:
-            - mountpath: /var/lib/mysql
+            - mountPath: /var/lib/mysql
               name: vpro-db-data
           ports:
             - name: vprodb-port
@@ -30,11 +30,11 @@ spec:
               valueFrom:
                 secretKeyRef:
                   name: app-secret
-                  kay: db-pass
+                  key: db-pass
       nodeSelector:
-        zone: us-easet-1a
-        volumes:
-          - name: vpro-db-data
-            awsElasticBlockSore:
-              volumeID: vol-09a122d27d65bd070
-              fstype: ext4
+        zone: us-east-1a
+      volumes:
+        - name: vpro-db-data
+           awsElasticBlockSore:
+             volumeID: vol-09a122d27d65bd070
+             fstype: ext4
