@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bd0cddc8-f5de-40ab-8b4d-d2e3b5be63c7" name="Changes" comment="vprofile app svc update2" />
+    <list default="true" id="bd0cddc8-f5de-40ab-8b4d-d2e3b5be63c7" name="Changes" comment="vprofile app svc update3">
+      <change beforePath="$PROJECT_DIR$/rmqdep.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/rmqdep.yaml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -191,7 +193,21 @@
       <option name="project" value="LOCAL" />
       <updated>1662876971208</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="vprofile app svc update2">
+      <created>1662877067661</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1662877067661</updated>
+    </task>
+    <task id="LOCAL-00024" summary="vprofile app svc update3">
+      <created>1662877196587</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1662877196587</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -225,6 +241,7 @@
     <MESSAGE value="vprofile app svc" />
     <MESSAGE value="vprofile app svc update1" />
     <MESSAGE value="vprofile app svc update2" />
-    <option name="LAST_COMMIT_MESSAGE" value="vprofile app svc update2" />
+    <MESSAGE value="vprofile app svc update3" />
+    <option name="LAST_COMMIT_MESSAGE" value="vprofile app svc update3" />
   </component>
 </project>
