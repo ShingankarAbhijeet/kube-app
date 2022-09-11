@@ -25,6 +25,6 @@ spec:
           image: busybox
           command: ['sh','-c','until nslookup vprodb;do echo waiting for mydb;sleep 2; done;']
         - name: init-memcache
-          image:busybox
+          image: busybox
           command: ['sh','-c','until nslookup vprocache01;do waiting for memcached; sleep 2; done;']
 
