@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bd0cddc8-f5de-40ab-8b4d-d2e3b5be63c7" name="Changes" comment="vprofile app svc update3">
-      <change beforePath="$PROJECT_DIR$/rmqdep.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/rmqdep.yaml" afterDir="false" />
+    <list default="true" id="bd0cddc8-f5de-40ab-8b4d-d2e3b5be63c7" name="Changes" comment="vprofile app svc update4">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app-secret.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/app-secret.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -207,7 +208,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662877196587</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="vprofile app svc update4">
+      <created>1662877377253</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1662877377253</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -242,6 +250,7 @@
     <MESSAGE value="vprofile app svc update1" />
     <MESSAGE value="vprofile app svc update2" />
     <MESSAGE value="vprofile app svc update3" />
-    <option name="LAST_COMMIT_MESSAGE" value="vprofile app svc update3" />
+    <MESSAGE value="vprofile app svc update4" />
+    <option name="LAST_COMMIT_MESSAGE" value="vprofile app svc update4" />
   </component>
 </project>
