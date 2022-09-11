@@ -277,3 +277,124 @@
   277  kubectl describe secret app-secret
   278  history
   279  history > history.txt
+  280  git status
+  281  git commit
+  282  git add .
+  283  git status
+  284  git push origin main
+  285  git status
+  286  kops delete cluster --name=vprokube.worldnomadictribesandgipsyforum.org --state=s3://kops-state-bucket-abz --yes
+  287  ls -lrt
+  288  kops create cluster --name=vprokube.worldnomadictribesandgipsyforum.org --state=s3://kops-state-bucket-abz --zones=us-east-1a,us-east-1b --node-count=2 --node-size=t3.small --master-size=size=t3.medium --node-volume-size=8 --master-volume-size=8 --dns-zone=vprokube.worldnomadictribesandgipsyforum.org
+  289  kops create cluster --name=vprokube.worldnomadictribesandgipsyforum.org --state=s3://kops-state-bucket-abz --zones=us-east-1a,us-east-1b --node-count=2 --node-size=t3.small --master-size=t3.medium --node-volume-size=8 --master-volume-size=8 --dns-zone=vprokube.worldnomadictribesandgipsyforum.org
+  290  kops update cluster --name=vprokube.worldnomadictribesandgipsyforum.org --state=s3://kops-state-bucket-abz --yes --admin
+  291  kops validate cluster --state=s3://kops-state-bucket-abz
+  292  kubectl get nodes
+  293  kubectl get nodes --show-labels
+  294  kubectl label node i-0001589b922dc4595 zone=us-east-1a
+  295  kubectl label node i-07d10c19b6ef829dc zone=us-east-1b
+  296  kubectl get nodes --show-labels
+  297  id
+  298  ls -lrt
+  299  cd kube-app/
+  300  ls -lrt
+  301  kops create cluster --name=vprokube.worldnomadictribesandgipsyforum.org --state=s3://kops-state-bucket-abz --zones=us-east-1a,us-east-1b --node-count=2 --node-size=t3.small --master-sizet3.medium --node-volume-size=8 --master-volume-size=8 --dns-zone=vprokube.worldnomadictribesandgipsyforum.org
+  302  kops create cluster --name=vprokube.worldnomadictribesandgipsyforum.org --state=s3://kops-state-bucket-abz --zones=us-east-1a,us-east-1b --node-count=2 --node-size=t3.small --master-size=t3.medium --node-volume-size=8 --master-volume-size=8 --dns-zone=vprokube.worldnomadictribesandgipsyforum.org
+  303  kops update cluster --name=vprokube.worldnomadictribesandgipsyforum.org --state=s3://kops-state-bucket-abz --yes --admin
+  304  kops validate cluster --state=s3://kops-state-bucket-abz
+  305  kubectl get nodes --show-labels
+  306  kubectl label nodes i-041bd5ed73ee3152d zone=us-east-1a
+  307  kubectl label nodes i-0fede2c47182f781e zone=us-east-1b
+  308  aws ec2 create --volume --size=3 --zone=us-east-1a
+  309  aws ec2 create --help
+  310  aws create --help
+  311  aws create ec2 --help
+  312  echo guest |base64
+  313  echo :guest" |base64
+  314  echo "guest" |base64
+  315  cd kube-app/
+  316  history
+  317  git pull
+  318  kubectl create -f app-secret.yaml 
+  319  kubectl create -f vprodbdep.yaml 
+  320  kubectl get pod
+  321  kubectl describe pod vprodb-75d5dbb9f-f2mq9
+  322  kubectl get pod 
+  323  ls -l
+  324  git pull
+  325  ls -lrt
+  326  kubectl apply -f .
+  327  git pull
+  328  kubectl apply -f .
+  329  git pull
+  330  kubectl apply -f .
+  331  git pull
+  332  kubectl apply -f .
+  333  git pull
+  334  kubectl apply -f .
+  335  git pull
+  336  kubectl apply -f .
+  337  kubectl get pod
+  338  kubectl describe pod vproapp-7fb58845d5-9dsmv
+  339  kubectl get pod
+  340  kubectl get  svc
+  341  kubectl  get svc
+  342  kubectl get pod
+  343  kubectl describe pod vprodb-75d5dbb9f-f2mq9
+  344  kubectl get svc
+  345  echo "vprodbpass" |base64
+  346  echo "guest" |base64
+  347  kubectl apply -f .
+  348  git pull
+  349  kubectl apply -f .
+  350  kubectl get svc
+  351  echo "dnByb2RicGFzcw==" |base64 decod
+  352  echo "dnByb2RicGFzcw==" |base64 decode
+  353  echo "dnByb2RicGFzcw==" |base64 --decode
+  354  echo "Z3Vlc3Q=" |base64 --decode
+  355  echo "guest" |base64 
+  356  echo "vprodbpass" |base64 
+  357  echo "dnByb2RicGFzcwo=" |base64 --decode
+  358  echo "dnByb2RicGFzcw==" |base64 --decode
+  359  echo "guest" |base64 
+  360  echo "Z3Vlc3Q=" |base64 
+  361  echo "Z3Vlc3QK=" |base64 
+  362  echo "Z3Vlc3Q=" |base64 --decode
+  363  echo "Z3Vlc3Qk" |base64 --decode
+  364  echo 'guest' |base64
+  365  echo 'vprodbpass' |base64
+  366  echo 'guest' |base64
+  367  git pul
+  368  git pull
+  369  kubectl apply -f .
+  370  kubectl get svc
+  371  kubectl get pod
+  372  echo -n "vprodbpass" base64
+  373  echo -n "vprodbpass" |base64
+  374  echo  "vprodbpass" |base64
+  375  echo -n "vprodbpass" |base64
+  376  echo -n "guest" |base64
+  377  kubectl get pod
+  378  kubectl delete pod vprodb-75d5dbb9f-f2mq9
+  379  kubectl get pod
+  380  kubectl delete pod vprodb-75d5dbb9f-f2mq9
+  381  kubectl get pod
+  382  git pull
+  383  kubectl get pod
+  384  kubectl apply -f .
+  385  kubectl delete pod vprodb-75d5dbb9f-fw5f5 vpromq01-7754b6b976-nvstw
+  386  kubectl get pod
+  387  kubectl delete -f .
+  388  kubectl get pod
+  389  kubectl get svc
+  390  kops delete cluster --name=vprokube.worldnomadictribesandgipsyforum.org --state=s3://kops-state-bucket-abz --yes
+  391  ls -lrt
+  392  git push .
+  393  git status
+  394  git commit .
+  395  history >>history.txt
+  396  git commit -m history
+  397  git commit -m 'history'
+  398  git push
+  399  history
+  400  history > history.txt
