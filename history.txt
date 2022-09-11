@@ -1,0 +1,279 @@
+    1  cat .kube/config 
+    2  kubectl context view
+    3  kubectl config view
+    4  kubectl get ns
+    5  kops create cluster --name=vprokube.worldnomadictribesandgipsyforum.org --state=s3://kops-state-bucket-abz --zones=us-east-1a,us-east-1b --node-count=2 --node-size=t3.medium --master-size=t3.medium --node-volume-size=8 --master-volume-size=8 --dns-zone=vprokube.worldnomadictribesandgipsyforum.org
+    6  kops update cluster --name=vprokube.worldnomadictribesandgipsyforum.org --state=s3://kops-state-bucket-abz --yes --admin
+    7  kops validate cluster --state=s3://kops-state-bucket-abz
+    8  kubectl get ns
+    9  kops validate cluster --state=s3://kops-state-bucket-abz
+   10  kubectl get nodes
+   11  kubectl get all --all-namespaces
+   12  kubectl -get svc -n kube-system
+   13  kubectl get svc -n kube-system
+   14  kubectl create ns kubekart
+   15  kubectl run nginx1 --image=nginx -n kubekart
+   16  ls -lrt
+   17  ls -lart
+   18  vi pod.yml
+   19  kubectl apply -f pod.yml 
+   20  kubectl get pod -n kubekart
+   21  kubectl delete ns kubekart
+   22  kubectl get pod -n kubekart
+   23  kops validate cluster --state=s3://kops-state-bucket-abz
+   24  kubectl get nodes
+   25  kubectl describe node i-0070d4583bf999a95
+   26  kubectl describe node i-0070d4583bf999a95 |less
+   27  kubectl describe node i-0070d4583bf999a95 -o|less
+   28  kubectl describe node i-0070d4583bf999a95 -o yaml |less
+   29  kubectl describe node i-0070d4583bf999a95 -o yaml
+   30  kubectl get node i-0070d4583bf999a95 -o yaml
+   31  mkdir definitions
+   32  cd definitions/
+   33  ls -lrt
+   34  mkdir pod
+   35  cd pod/
+   36  vi vproapppod.yml
+   37  ls -lrt
+   38  vi vproapppod.yml
+   39  ls -lrt
+   40  ls -lart
+   41  rm -rf .vproapppod.yml.swp
+   42  vi vproapppod.yml
+   43  kubectl create -f vproapppod.yml 
+   44  vi vproapppod.yml
+   45  kubectl create -f vproapppod.yml 
+   46  vi vproapppod.yml
+   47  kubectl create -f vproapppod.yml 
+   48  kubectl describe pod pod/vproapp
+   49  kubectl describe pod vproapp
+   50  kubectl describe pod vproapp |less
+   51  vi vproapppod.yml
+   52  kubectl create -f vproapppod.yml 
+   53  kubectl delete pod vproapp
+   54  kubectl create -f vproapppod.yml 
+   55  kubectl describe pod vproapp |less
+   56  kubectl describe pod vproapp 
+   57  kubectl get pod
+   58  kops delete cluster --name=vprokube.worldnomadictribesandgipsyforum.org --state=s3://kops-state-bucket-abz
+   59  kops delete cluster --name=vprokube.worldnomadictribesandgipsyforum.org --state=s3://kops-state-bucket-abz --yes
+   60  kops create cluster --name=vprokube.worldnomadictribesandgipsyforum.org --state=s3://kops-state-bucket-abz --zones=us-east-1a,us-east-1b --node-count=2 --node-size=t3.medium --master-size=t3.medium --node-volume-size=8 --master-volume-size=8 --dns-zone=vprokube.worldnomadictribesandgipsyforum.org
+   61  kops update cluster --name=vprokube.worldnomadictribesandgipsyforum.org --state=s3://kops-state-bucket-abz --yes --admin
+   62  kops validate cluster --state=s3://kops-state-bucket-abz
+   63  history
+   64  vi vproapppod.yml
+   65  kubectl create -f vproapppod.yml
+   66  kubectl get nodes
+   67  kubectl get pod
+   68  kubectl get pod -o wide
+   69  kubectl get pod
+   70  vi vproapppod.yml
+   71  cd ..
+   72  ls -lrt
+   73  cat pod.yml 
+   74  kubectl create -f pod.yml 
+   75  kubectl create namespace kubekart
+   76  kubectl create -f pod.yml 
+   77  kubectl get pod
+   78  cat pod.yml 
+   79  vi pod.yml
+   80  kubectl create -f pod.yml 
+   81  kubectl get pod
+   82  kubectl delte pod vproapp
+   83  kubectl delete pod vproapp
+   84  vi definitions/pod/vproapppod.yml 
+   85  kubectl create pod -f  definitions/pod/vproapppod.yml 
+   86  kubectl create  -f  definitions/pod/vproapppod.yml 
+   87  kubectl get pod
+   88  kubectl get pod -o wide
+   89  kubectl get pod -o yaml
+   90  kubectl get pod -o yaml |less
+   91  kubectl get pod
+   92  kubectl describe podvproapp
+   93  kubectl describe pod vproapp
+   94  kubectl delete pod vproapp
+   95  vi definitions/pod/vproapppod.yml 
+   96  kubectl apply -f definitions/pod/vproapppod.yml
+   97  kubectl get pod
+   98  kubectl log vproapp
+   99  kubectl logs vproapp
+  100  kops delete cluster --name=vprokube.worldnomadictribesandgipsyforum.org --state=s3://kops-state-bucket-abz --yes
+  101  history
+  102  kops create cluster --name=vprokube.worldnomadictribesandgipsyforum.org --state=s3://kops-state-bucket-abz --zones=us-east-1a,us-east-1b --node-count=2 --node-size=t3.medium --master-size=t3.medium --node-volume-size=8 --master-volume-size=8 --dns-zone=vprokube.worldnomadictribesandgipsyforum.org
+  103  kops update cluster --name=vprokube.worldnomadictribesandgipsyforum.org --state=s3://kops-state-bucket-abz --yes --admin
+  104  kops validate cluster --state=s3://kops-state-bucket-abz
+  105  cd definitions/pod/
+  106  ls -lrt
+  107  cat "'" 
+  108  rm -rf "'" 
+  109  ls -lrt
+  110  ls -lart
+  111  cat vproapppod.yml 
+  112  kubectl create -f vproapppod.yml 
+  113  kubectl get pod
+  114  cd ..
+  115  ls -lrt
+  116  mv pod app
+  117  ls -lrt
+  118  cd app
+  119  ls -lrt
+  120  vi vpronodeport.yml
+  121  cat vproapppod.yml 
+  122  cat vpronodeport.yml 
+  123  vi vpronodeport.yml
+  124  cat vpronodeport.yml 
+  125  kubectl create -f vpronodeport.yml 
+  126  vi vpronodeport.yml
+  127  kubectl create -f vpronodeport.yml 
+  128  vi vpronodeport.yml
+  129  kubectl create -f vpronodeport.yml 
+  130  vi vpronodeport.yml
+  131  kubectl create -f vpronodeport.yml 
+  132  vi vpronodeport.yml
+  133  kubectl create -f vpronodeport.yml 
+  134  vi vpronodeport.yml
+  135  kubectl create -f vpronodeport.yml 
+  136  kubectl get svc
+  137  kubectl describe svc helloworld-service 
+  138  kubectl describe pod |grep IP
+  139  kubectl delete svc helloworld-service
+  140  ls -lrt
+  141  cp vpronodeport.yml vprolb.yml
+  142  vi vprolb.yml 
+  143  kubectl create -f vprolb.yml 
+  144  kubectl get svc
+  145  kubectl describe svc helloworld-service
+  146  kubectl logs svc helloworld-service
+  147  kubectl logs \ helloworld-service
+  148  kubectl logs helloworld-service
+  149  kubectl get svc
+  150  kops delete cluster --name=vprokube.worldnomadictribesandgipsyforum.org --state=s3://kops-state-bucket-abz --yes
+  151  cd definitions/app/
+  152  ls -lrt
+  153  kops create cluster --name=vprokube.worldnomadictribesandgipsyforum.org --state=s3://kops-state-bucket-abz --zones=us-east-1a,us-east-1b --node-count=2 --node-size=t3.small --master-size=t3.medium --node-volume-size=8 --master-volume-size=8 --dns-zone=vprokube.worldnomadictribesandgipsyforum.org
+  154  kops update cluster --name=vprokube.worldnomadictribesandgipsyforum.org --state=s3://kops-state-bucket-abz --yes --admin
+  155  kops validate cluster --state=s3://kops-state-bucket-abz
+  156  kubectl get pod
+  157  kubectl get ns
+  158  history
+  159  echo "admin" |base64 
+  160  echo "MySecretpass" |base64
+  161  vim mysecret.yml
+  162  vi mysecret.yml
+  163  kubectl create -f mysecret.yml 
+  164  kubectl get secret
+  165  vi readsecret.yml
+  166  kubectl apply -f  readsecret.yml 
+  167  kubectl get pod
+  168  kubectl exec --stdin --tty secret-env-pod -- /bin/bash
+  169  kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.3.1/deploy/static/provider/aws/deploy.yaml
+  170  ls -lrt
+  171  kubectl get ns
+  172  kubectl get all --ns=ingress-nginx
+  173  kubectl get all ns ingress-nginx
+  174  kubectl get all -n ingress-nginx
+  175  mkdir vprofile
+  176  cd vprofile/
+  177  ls -lrt
+  178  vi vprodep.yml
+  179  kubectl apply -f vprodep.yml 
+  180  vi vprodep.yml
+  181  kubectl apply -f vprodep.yml 
+  182  vi vprodep.yml
+  183  kubectl apply -f vprodep.yml 
+  184  vi vprosvc.yml
+  185  kubectl apply -f vprosvc.yml 
+  186  kubectl get svc
+  187  '
+  188  kubectl get svc my-app
+  189  kubectl describe svc my-app
+  190  vi vproingress.yaml
+  191  kubectl get svc
+  192  kubectl describe svc my-app
+  193  vi vproingress.yaml 
+  194  ls -lrt
+  195  cat vprosvc.yml
+  196  cat vprodep.yml
+  197  kubectl create -f vproingress.yaml 
+  198  vi vproingress.yaml 
+  199  kubectl create -f vproingress.yaml 
+  200  kubectl get ingress
+  201  kubectl delete ingress vpro-ingress
+  202  vi vproingress.yaml 
+  203  kubectl apply -f vproingress.yaml 
+  204  kubectl get ingress --watch
+  205  kubectl get pods
+  206  kubectl describe pod my-app-9454b6547-dtj86
+  207  kubectl get ns
+  208  kubectl delete ns ingress-nginx
+  209  kubectl get ns
+  210  kubectl get pod
+  211  kubectl delete pod my-app-9454b6547-dtj86 secret-env-pod
+  212  kubectl get svc
+  213  kops delete cluster --name=vprokube.worldnomadictribesandgipsyforum.org --state=s3://kops-state-bucket-abz --yes
+  214  kops create cluster --name=vprokube.worldnomadictribesandgipsyforum.org --state=s3://kops-state-bucket-abz --zones=us-east-1a,us-east-1b --node-count=2 --node-size=t3.small --master-size=t3.medium --node-volume-size=8 --master-volume-size=8 --dns-zone=vprokube.worldnomadictribesandgipsyforum.org
+  215  kops update cluster --name=vprokube.worldnomadictribesandgipsyforum.org --state=s3://kops-state-bucket-abz --yes --admin
+  216  kops validate cluster --state=s3://kops-state-bucket-abz
+  217  kops delete cluster --name=vprokube.worldnomadictribesandgipsyforum.org --state=s3://kops-state-bucket-abz --yes
+  218  kops create cluster --name=vprokube.worldnomadictribesandgipsyforum.org --state=s3://kops-state-bucket-abz --zones=us-east-1a,us-east-1b --node-count=2 --node-size=t3.small --master-size=size=t3.medium --node-volume-size=8 --master-volume-size=8 --dns-zone=vprokube.worldnomadictribesandgipsyforum.org
+  219  kops create cluster --name=vprokube.worldnomadictribesandgipsyforum.org --state=s3://kops-state-bucket-abz --zones=us-east-1a,us-east-1b --node-count=2 --node-size=t3.small --master-size=t3.medium --node-volume-size=8 --master-volume-size=8 --dns-zone=vprokube.worldnomadictribesandgipsyforum.org
+  220  kops update cluster --name=vprokube.worldnomadictribesandgipsyforum.org --state=s3://kops-state-bucket-abz --yes --admin
+  221  kops validate cluster --state=s3://kops-state-bucket-abz
+  222  kubectl describe node i-00a1f3d24dea7bbdf |grep -i us-east
+  223  kubectl describe node i-0f7d42e1820893030|grep -i us-east
+  224  kubrectl label node i-00a1f3d24dea7bbdf=us-east-1a
+  225  kubectl label node i-00a1f3d24dea7bbdf=us-east-1a
+  226  kubectl describe node i-00a1f3d24dea7bbdf |grep -i host
+  227  kubectl label node i-00a1f3d24dea7bbdf.ec2.internal=us-east-1a
+  228  kubectl label node --name i-00a1f3d24dea7bbdf.ec2.internal=us-east-1a
+  229  kubectl label --help
+  230  kubectl label --help|less
+  231  kops edit --help
+  232  kops edit --help|less
+  233  kops edit cluster --help |less
+  234  kops edit instancegroup --help |less
+  235  kops edit nodes
+  236  kops edit ig nodes
+  237  kops edit ig nodes s3://kops-state-bucket-abz
+  238  kops edit  nodes s3://kops-state-bucket-abz
+  239  kops edit  instancegroup s3://kops-state-bucket-abz
+  240  kops edit  instancegroup --state=s3://kops-state-bucket-abz
+  241  kops edit  nodes state=s3://kops-state-bucket-abz
+  242  kops edit  nodes --state=s3://kops-state-bucket-abz
+  243  kops edit  ig nodes --state=s3://kops-state-bucket-abz
+  244  kops edit  ig  --state=s3://kops-state-bucket-abz
+  245  kops edit cluster
+  246  kops edit  cluster  --state=s3://kops-state-bucket-abz
+  247  kops edit  instancegroup  --state=s3://kops-state-bucket-abz
+  248  kops edit  instancegroup node  --state=s3://kops-state-bucket-abz
+  249  kubectl get nodes
+  250  kops edit  instancegroup i-00a1f3d24dea7bbdf  --state=s3://kops-state-bucket-abz
+  251  kubectl nodes --show-labels
+  252  kubectl get nodes --show-labels
+  253  kubectl lablel i-00a1f3d24dea7bbdf=us-east-1
+  254  kubectl label i-00a1f3d24dea7bbdf=us-east-1
+  255  kubectl label node i-00a1f3d24dea7bbdf=us-east-1
+  256  kubectl label node i-00a1f3d24dea7bbdf/us-east-1
+  257  kubectl label node i-00a1f3d24dea7bbdf us-east-1a
+  258  kubectl label node i-00a1f3d24dea7bbdf=us-east-1a
+  259  kubectl label node i-00a1f3d24dea7bbdf us-east-1a
+  260  kubectl label node i-00a1f3d24dea7bbdf i-00a1f3d24dea7bbdf/us-east-1a
+  261  kubectl label node i-00a1f3d24dea7bbdf zone=us-east-1a
+  262  kubectl get nodes
+  263  kubectl label node i-0f7d42e1820893030 zone=us-east-1b
+  264  kubectl describe node i-0f7d42e1820893030 |grep -i us-east
+  265  echo "vprodbpass" |base64
+  266  echo "guest" |base64
+  267  git clone https://github.com/abzlast/kube-app.git
+  268  ls -lrt
+  269  cd kube-app/
+  270  ls -lrt
+  271  kubectl create -f app-secret.yaml 
+  272  ls -lrt
+  273  git pull
+  274  ls -lrt
+  275  vi app-secret.yaml 
+  276  kubectl create -f app-secret.yaml 
+  277  kubectl describe secret app-secret
+  278  history
+  279  history > history.txt
